@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>This is a home opage</h1>
+    <h1>Home Page</h1>
+    <hr>
+    {% if user.is_authenticated %}
+      <h3>User Profile:</h3>
+      <br>
+      <ul>
+        <li><p><strong>Name: </strong>    {{ user.first_name }} {{ user.last_name }} </p></li>
+        <li><p><strong>Username: </strong>{{ user.username}} </p></li>
+        <li><p><strong>Password: </strong>{{ user.password}} </p></li>
+        <li><p><strong>Email: </strong>   {{ user.email}} </p></li>
+      </ul>
+    {% endif %}
 {% endblock  %}
