@@ -1,9 +1,8 @@
 
-# Created by https://www.gitignore.io/api/code,django,python,virtualenv
-# Edit at https://www.gitignore.io/?templates=code,django,python,virtualenv
+# Created by https://www.gitignore.io/api/code,venv,django,python,virtualenv
+# Edit at https://www.gitignore.io/?templates=code,venv,django,python,virtualenv
 
 ### Code ###
-.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -174,7 +173,7 @@ dmypy.json
 
 # Pyre type checker
 
-### VirtualEnv ###
+### venv ###
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 pyvenv.cfg
@@ -187,4 +186,8 @@ env.bak/
 venv.bak/
 pip-selfcheck.json
 
-# End of https://www.gitignore.io/api/code,django,python,virtualenv
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+
+# End of https://www.gitignore.io/api/code,venv,django,python,virtualenv
